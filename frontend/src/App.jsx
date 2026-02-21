@@ -11,6 +11,10 @@ const App = () => {
         <Link to="/my-bookings">My Bookings</Link>
       </nav>
 
+      <footer style={{ textAlign: "center", marginTop: "40px", padding: "20px" }}>
+  Developed by <strong>Gulshan Kotiya</strong> © 2026
+</footer>
+
       <Routes>
         <Route path="/" element={<Navigate to="/experts" />} />
         <Route path="/experts" element={<ExpertListPage />} />
