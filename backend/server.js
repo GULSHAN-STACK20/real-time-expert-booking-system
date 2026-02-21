@@ -10,9 +10,7 @@ import expertRoutes from './routes/expertRoutes.js';
 import { errorHandler, notFoundHandler } from './middleware/errorHandler.js';
 import { requestLogger } from './middleware/requestLogger.js';
 
-app.get("/", (req, res) => {
-  res.send("Real-Time Expert Booking API Running");
-});
+
 const app = express();
 
 app.use(
@@ -25,6 +23,10 @@ app.use(requestLogger);
 
 app.get('/health', (_req, res) => {
   res.status(200).json({ success: true, message: 'Server is healthy' });
+});
+
+app.get("/", (req, res) => {
+  res.send("Real-Time Expert Booking API Running");
 });
 
 app.use('/api/experts', expertRoutes);
