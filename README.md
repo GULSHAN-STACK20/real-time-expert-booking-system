@@ -1,4 +1,17 @@
-# Real-Time Expert Booking System
+# Real-Time Expert Session Booking System
+
+## 👨‍💻 Developed By
+**Gulshan Kotiya**
+
+- Email: your-gulshankotiya20@gmail.com
+- Phone: +91-7902060877
+- GitHub: https://github.com/GULSHAN-STACK20 LinkedIn(https://www.linkedin.com/in/gulshan-kotiya?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
+
+---
+
+## 🚀 Live Demo
+Frontend: https://real-time-expert-booking-system.vercel.app  
+Backend: https://real-time-expert-booking-system.onrender.com# Real-Time Expert Booking System
 
 Production-oriented full-stack implementation with Node.js, Express, MongoDB, Socket.io, and React.
 
