@@ -1,12 +1,10 @@
 {
-  "name": "expert-booking-backend",
+  "name": "backend",
   "version": "1.0.0",
   "main": "server.js",
-  "type": "module",
+  "author": "Gulshan Kotiya",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
-    "seed": "node scripts/seedExperts.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
