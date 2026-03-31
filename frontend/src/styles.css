@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f7f8fb;
+  color: #222;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.slot-wrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.slot {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #eef2ff;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 4px 8px;
+  color: white;
+}
+
+.badge.pending {
+  background: #f59e0b;
+}
+
+.badge.confirmed {
+  background: #2563eb;
+}
+
+.badge.completed {
+  background: #16a34a;
+}

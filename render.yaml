@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: expert-booking-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: PORT
+        value: 5000
+      - key: CLIENT_ORIGIN
+        value: https://expert-booking-frontend.onrender.com
+      - key: JWT_SECRET
+        sync: false
+
+  - type: web
+    name: expert-booking-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://expert-booking-backend.onrender.com
